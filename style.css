@@ -170,3 +170,40 @@ main .container .info div {
     font-size: 3rem;
   }
 }
+
+@media (max-width: 600px) {
+  main .container {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 120px;
+  }
+
+  /* change order */
+  main .container .check {
+    order: 2;
+  }
+
+  main .container .check input {
+    width: 20rem;
+    font-size: 4rem;
+  }
+
+  main .container .info div {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  main .container .info div:first-child {
+    margin-bottom: 40px;
+  }
+
+  header .title h1 {
+    font-size: 2.5rem;
+  }
+
+  header .container .again {
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+  }
+
+}
