@@ -193,6 +193,7 @@ main .container .info div {
   main .container .check .check-btn {
     font-size: 18px;
     padding: 15px;
+    margin-bottom: 30px;
   }
 
   header .container .Range {
