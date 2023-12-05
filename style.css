@@ -20,6 +20,7 @@ html {
 
 body {
   background-color: #222222;
+  height: 100svh;
 }
 
 header .container {
@@ -204,6 +205,11 @@ main .container .info div {
   header .container .again {
     font-size: 1.5rem;
     padding: 1.5rem 2rem;
+  }
+
+  main {
+    margin-top: 100px;
+    position: relative;
   }
 
 }
