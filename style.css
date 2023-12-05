@@ -185,8 +185,18 @@ main .container .info div {
   }
 
   main .container .check input {
-    width: 20rem;
-    font-size: 4rem;
+    width: 150px;
+    height: 70px;
+    font-size: 30px;
+  }
+
+  main .container .check .check-btn {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  header .container .Range {
+    font-size: 12px;
   }
 
   main .container .info div {
