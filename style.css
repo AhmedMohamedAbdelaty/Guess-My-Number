@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+:root {
+  --bg-color: #222222;
+  --main-color: #eeeeee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: 'Press Start 2P', cursive;
+  color: var(--main-color);
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222222;
+}
+
+header .container {
+  padding: 20px 30px 0 30px;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container .again {
+  color: var(--bg-color);
+  background-color: var(--main-color);
+  border: none;
+  padding: 2rem 3rem;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 10px;
+  transition: all 0.1s ease;
+}
+
+header .container .again:hover {
+  filter: drop-shadow(0 0 0 var(--main-color));
+  clip-path: inset(0% 0 0% 0 round 10px);
+}
+
+header .container .again:active {
+  filter: drop-shadow(0 -10px 0 var(--main-color));
+  transform: translate(0, 20px);
+  clip-path: inset(-20% 0 13% 0 round 10px);
+  background-color: #aaa8ac;
+}
+
+header .title {
+  text-align: center;
+  margin-top: 100px;
+}
+
+header .title h1 {
+  font-size: 4rem;
+}
+
+main {
+  margin-top: 170px;
+  position: relative;
+}
+
+main .line {
+  width: 100%;
+  height: 7px;
+  background-color: var(--main-color);
+}
+
+main .box {
+  width: 120px;
+  height: 100px;
+  background-color: var(--main-color);
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+}
+
+main .box .q {
+  font-size: 5.5rem;
+  color: var(--bg-color);
+  text-align: center;
+  line-height: 2;
+}
+
+main .container {
+  margin-top: 150px;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+
+main .container .check {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .container .check input {
+  background-color: transparent;
+  height: 100px;
+  border: 4px solid var(--main-color);
+  width: 25rem;
+  font-size: 6rem;
+  color: var(--main-color);
+  text-align: center;
+}
+
+main .container .check .check-btn {
+  background-color: #eee;
+  color: #222;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-top: 3rem;
+  border-radius: 10px;
+  text-align: center;
+  width: fit-content;
+  padding: 20px;
+  transition: all 0.1s ease;
+  border: none;
+}
+
+
+main .container .check .check-btn:hover {
+  filter: drop-shadow(0 0 0 #737374);
+  clip-path: inset(0% 0 0% 0 round 10px);
+}
+
+main .container .check .check-btn:active {
+  filter: drop-shadow(0 -10px 0 #e7e6e9);
+  transform: translate(0, 20px);
+  clip-path: inset(-20% 0 13% 0 round 10px);
+  background-color: #aaa8ac;
+}
+
+
+main .container .info div:first-child {
+  margin-bottom: 9rem;
+}
+
+main .container .info div {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  min-width: 250px;
+}
+
+@media (max-width: 800px) {
+  main .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  main .container .info div {
+    font-size: 1.6rem;
+  }
+
+  header .title h1 {
+    font-size: 3rem;
+  }
+}
